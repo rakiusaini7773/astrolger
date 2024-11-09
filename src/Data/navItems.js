@@ -37,10 +37,10 @@ const navItems = [
       },
     ],
   },
-  // {
-  //   id: 4,
-  //   title: "Love Vashikaran Specialist",
-  //   path: "/Love-Vashikaran-Specialist",
+  {
+    id: 4,
+    title: "Love Vashikaran Specialist",
+    path: "/Love-Vashikaran-Specialist",
   //   subTopics: [
   //     {
   //       subTitle: "Love Problem Specialist",
@@ -55,7 +55,7 @@ const navItems = [
   //       path: "/Marital-Problem-Solution", 
   //     }
   //   ],
-  // },
+  },
  
   // {
   //   id: 7,
