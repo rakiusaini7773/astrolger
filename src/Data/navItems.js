@@ -37,54 +37,51 @@ const navItems = [
       },
     ],
   },
-  {
-    id: 4,
-    title: "Love Vashikaran Specialist",
-    path: "/Love-Vashikaran-Specialist",
-    subTopics: [
-      {
-        subTitle: "Love Problem Specialist",
-        path: "/Love-Problem-Specialist",
-      },
-      {
-        subTitle: "love Marriage Specialist",
-        path: "/Love-Marriage-Specialist",
-      },
-      {
-        subTitle: "Marital Problem Solution",
-        path: "/Marital-Problem-Solution", 
-      }
-    ],
-  },
+  // {
+  //   id: 4,
+  //   title: "Love Vashikaran Specialist",
+  //   path: "/Love-Vashikaran-Specialist",
+  //   subTopics: [
+  //     {
+  //       subTitle: "Love Problem Specialist",
+  //       path: "/Love-Problem-Specialist",
+  //     },
+  //     {
+  //       subTitle: "love Marriage Specialist",
+  //       path: "/Love-Marriage-Specialist",
+  //     },
+  //     {
+  //       subTitle: "Marital Problem Solution",
+  //       path: "/Marital-Problem-Solution", 
+  //     }
+  //   ],
+  // },
  
-
-  // Uncomment these items as needed
-  {
-    id: 7,
-    title: "Love Horoscope",
-    path: "/Love-Horoscope",
-  },
-  {
-    id: 8,
-    title: "Awards",
-    path: "/Awards",
-  },
-  {
-    id: 9,
-    title: "Testimonials",
-    path: "/testimonials",
-  },
-  {
-    id: 10,
-    title: "Blog",
-    path: "/Blog",
-  },
-  {
-    id: 11,
-    title: "Contact",
-    path: "/Contact",
-  },
+  // {
+  //   id: 7,
+  //   title: "Love Horoscope",
+  //   path: "/Love-Horoscope",
+  // },
+  // {
+  //   id: 8,
+  //   title: "Awards",
+  //   path: "/Awards",
+  // },
+  // {
+  //   id: 9,
+  //   title: "Testimonials",
+  //   path: "/testimonials",
+  // },
+  // {
+  //   id: 10,
+  //   title: "Blog",
+  //   path: "/Blog",
+  // },
+  // {
+  //   id: 11,
+  //   title: "Contact",
+  //   path: "/Contact",
+  // },
 ];
 
 export default navItems;
-

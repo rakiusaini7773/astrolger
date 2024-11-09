@@ -3,10 +3,10 @@ import Navbar from "../Components/Navbar";
 import YtQuery from "../Components/YtQuery";
 import Footer from "../Components/Footer.jsx";
 import { useState } from "react";
-import gettingAward from "../images/gettingAward.jpg"
-import { Link , useParams } from "react-router-dom";
+import gettingAward from "../images/gettingAward.jpg";
+import { Link, useParams } from "react-router-dom";
 
-const SimilarPage = ({ Content,Title }) => {
+const SimilarPage = ({ Content, Title }) => {
   // State to track the active list item
   const [activeIndex, setActiveIndex] = useState(null);
 
@@ -16,65 +16,65 @@ const SimilarPage = ({ Content,Title }) => {
     setActiveIndex(index === activeIndex ? null : index);
   };
   const handleSlug = () => {
-    
-const {slug} = useParams()
-  }
+    const { slug } = useParams();
+  };
   return (
     <>
-    <Navbar />
+      <Navbar />
       <div className="contentSection p-4">
-        <h1 className="border-b-2 border-black font-bold text-2xl">
-          {Content[0].Page1heading1}
-        </h1>
-        <div>
-          <div className="hidden custom-md:flex text-justify mt-2">
-            <div>
-              {Content[0].Page1para1.map((item, index) => (
-                <p key={index}> {item} </p>
-              ))}
+        <div
+          className=""
+          style={{ backgroundImage: `url('/images/bg2.webp')` }}>
+          <h1 className="border-b-2 w-[70vw] m-auto  border-black font-bold text-2xl flex items-center justify-center">
+            {Content[0].Page1heading1}
+          </h1>
+          <div className="">
+            <div className="hidden custom-md:flex text-justify mt-2 ">
+              <div className=" w-[70vw]  flex m-auto items-center justify-center">
+                <div className="p-5">
+                  {Content[0].Page1para1.map((item, index) => (
+                    <p key={index}> {item} </p>
+                  ))}
+                  {Content[0].Page1heading2 && (
+                    <h1 className="border-b-2 border-black font-bold text-2xl">
+                      {Content[0].Page1heading2}
+                    </h1>
+                  )}
+
+                  {Content[0].Page1para2 &&
+                    Content[0].Page1para2.map((item, index) => (
+                      <p key={index}> {item} </p>
+                    ))}
+                </div>
+              </div>
+
+              {/* <div className="ml-5 animate-slideInRight ">
+              <YtQuery />
+            </div> */}
+            </div>
+            <div className="block custom-md:hidden text-justify animate-slideInRight">
+              {/* <div>
+              <YtQuery />
+            </div> */}
+              <div>
+                {Content[0].Page1para1.map((item, index) => (
+                  <p key={index}> {item} </p>
+                ))}
                 {Content[0].Page1heading2 && (
-                  
-              <h1 className="border-b-2 border-black font-bold text-2xl">
-                {Content[0].Page1heading2}
-              </h1>
+                  <h1 className="border-b-2 border-black font-bold text-2xl">
+                    {Content[0].Page1heading2}
+                  </h1>
                 )}
-
-{Content[0].Page1para2 && 
-  Content[0].Page1para2.map((item, index) => (
-    <p key={index}> {item} </p>
-  ))
-}
-
-            </div>
-            
-            <div className="ml-5 animate-slideInRight ">
-              <YtQuery />
-            </div>
-          </div>
-          <div className="block custom-md:hidden text-justify animate-slideInRight">
-            <div>
-              <YtQuery />
-            </div>
-            <div>
-              {Content[0].Page1para1.map((item, index) => (
-                <p key={index}> {item} </p>
-              ))}
-              {Content[0].Page1heading2 && (
-                
-              <h1 className="border-b-2 border-black font-bold text-2xl">
-                {Content[0].Page1heading2}
-              </h1>
-              )}
-              {Content[0].Page1para2 && 
-                Content[0].Page1para2.map((item, index) => (
-                <p key={index}> {item} </p>
-              ))
-              }
+                {Content[0].Page1para2 &&
+                  Content[0].Page1para2.map((item, index) => (
+                    <p key={index}> {item} </p>
+                  ))}
+              </div>
             </div>
           </div>
         </div>
 
-        <div className="midContentBox bg-green-700 p-4 my-4 text-white flex text-center items-center justify-center">
+        <div className="midContentBox bg-green-900 p-4 my-4 text-white flex text-center items-center justify-center">
           <p>
             Swift And Effective Solution Through{" "}
             <strong>Healing & Meditation</strong> By{" "}
@@ -96,7 +96,7 @@ const {slug} = useParams()
 
         {/* Middle Section */}
 
-        <div>
+        <div className="bg-green-200">
           <h2 className="text-2xl font-bold mb-4">{Content[0].heading2}</h2>
           <div className="hidden custom-md:flex">
             <div className="w-[70vw] items-center justify-center">
@@ -150,31 +150,28 @@ const {slug} = useParams()
             </div>
           </div>
         </div>
+<div className="space-y-5 " style={{backgroundImage: `url('/images/bg2.webp')`}}>
 
         {Content[0].heading3 && (
-          
-        <h2 className="text-2xl font-bold mb-4">{Content[0].heading3}</h2>
+          <h2 className="text-2xl font-bold mb-4">{Content[0].heading3}</h2>
         )}
-{Content[0].para3 && (
-  
-        <>
-          {Content[0].para3.map((item, index) => (
-            <p key={index} className="mb-4">
-              {item}
-            </p>
-          ))}
-        </>
+        {Content[0].para3 && (
+          <>
+            {Content[0].para3.map((item, index) => (
+              <p key={index} className="mb-4">
+                {item}
+              </p>
+            ))}
+          </>
+        )}
 
-)}
-
-{Content[0].ul3 && (
-  
-        <ul className="list-disc pl-5 mb-6 space-y-2">
-          {Content[0].ul3.map((item, index) => (
-            <li key={index}> {item}</li>
-          ))}
-        </ul>
-)}
+        {Content[0].ul3 && (
+          <ul className="list-disc pl-5 mb-6 space-y-2">
+            {Content[0].ul3.map((item, index) => (
+              <li key={index}> {item}</li>
+            ))}
+          </ul>
+        )}
 
         {Content[0].heading4 && (
           <h2 className="text-2xl font-bold mb-4">{Content[0].heading4}</h2>
@@ -201,32 +198,8 @@ const {slug} = useParams()
             ))}
           </>
         )}
+</div>
 
-        <div className="faq mt-8">
-          <h3 className="text-xl font-bold mb-4  ">
-            <span className="bg-neutral-600 p-1 text-white">FAQs</span>
-          </h3>
-
-          <div>
-            <ul className="bg-green-300 p-2">
-              {Content[0].faq[0].heading.map((item, index) => (
-                <li className="border-green-500 border-b-2" key={index}>
-                  <div
-                    onClick={() => handleItemClick(index)}
-                    className="cursor-pointer pl-2 p-3">
-                    {item}
-                  </div>
-
-                  {activeIndex === index && (
-                    <p className="mt-2 pl-1 bg-white">
-                      {Content[0].faq[0].answers[index]}
-                    </p>
-                  )}
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
 
         <div className="bg-yellow-200 p-4 rounded-md mt-2">
           <p className="text-gray-700">
@@ -255,7 +228,7 @@ const {slug} = useParams()
         <div className="bg-red-400 p-4 border-2 border-black m-2">
           <ul className="grid custom-md:grid-cols-3 gap-4">
             {Content[0].placesNames.map((item, index) => (
-              <li>
+              <li className="p-1 border-b-slate-500 border-2 ">
                 <Link to={`${Title}${item.pathName}`} key={index}>
                   {" "}
                   {Content[0].placesNames[index].placeTitle}
