@@ -41,27 +41,27 @@ const navItems = [
     id: 4,
     title: "Love Vashikaran Specialist",
     path: "/Love-Vashikaran-Specialist",
-  //   subTopics: [
-  //     {
-  //       subTitle: "Love Problem Specialist",
-  //       path: "/Love-Problem-Specialist",
-  //     },
-  //     {
-  //       subTitle: "love Marriage Specialist",
-  //       path: "/Love-Marriage-Specialist",
-  //     },
-  //     {
-  //       subTitle: "Marital Problem Solution",
-  //       path: "/Marital-Problem-Solution", 
-  //     }
-  //   ],
+    subTopics: [
+      {
+        subTitle: "Love Problem Specialist",
+        path: "/Love-Problem-Specialist",
+      },
+      {
+        subTitle: "love Marriage Specialist",
+        path: "/Love-Marriage-Specialist",
+      },
+      {
+        subTitle: "Marital Problem Solution",
+        path: "/Marital-Problem-Solution", 
+      }
+    ],
   },
  
-  // {
-  //   id: 7,
-  //   title: "Love Horoscope",
-  //   path: "/Love-Horoscope",
-  // },
+  {
+    id: 7,
+    title: "Love Horoscope",
+    path: "/Love-Horoscope",
+  },
   // {
   //   id: 8,
   //   title: "Awards",

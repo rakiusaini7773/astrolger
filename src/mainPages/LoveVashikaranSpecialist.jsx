@@ -4,9 +4,9 @@ import YtQuery from "../Components/YtQuery";
 import Footer from "../Components/Footer.jsx";
 import PlacesNames from "../Data/VashikaranSpecialist/PlacesNames.js";
 import { useState } from "react";
-import { Link , useParams } from "react-router-dom";
-import awardCeremony  from "../images/gettingAwardFromSonu.jpg"
-
+import { Link, useParams } from "react-router-dom";
+import awardCeremony from "../images/gettingAwardFromSonu.jpg"
+import image1 from "../../public/images/bg4.webp"
 const LoveVashikaranSpecialist = () => {
   // State to track the active list item
   const [activeIndex, setActiveIndex] = useState(null);
@@ -16,323 +16,294 @@ const LoveVashikaranSpecialist = () => {
     // Toggle visibility of the paragraph
     setActiveIndex(index === activeIndex ? null : index);
   };
-  
-const {slug} = useParams()
+
+  const { slug } = useParams()
   return (
     <>
       <Navbar />
 
       <div className="contentSection p-4">
-        <h1 className="font-bold text-2xl border-b-2 border-black">
-          Love Vashikaran Specialist
+        <h1 className="relative font-extrabold text-3xl md:text-4xl lg:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 mb-6 p-2">
+          <span className="relative z-10 text-black">Love Vashikaran Specialist</span>
+          <span className="absolute inset-x-0 -bottom-1 h-1 bg-gradient-to-r from-yellow-500 to-red-500"></span>
         </h1>
-        <div className="hidden custom-md:flex">
-          <div>
-            <p className="mb-4 mt-5">
-              Both 'Love' and 'Vashikaran' are serious and intricate matters
-              that require utmost care and proper handling. Therefore, a love
-              vashikaran expert should be a knowledgeable and experienced
-              individual who is mature and sophisticated. In addition to these
-              qualities, there are several other factors to consider when
-              contemplating seeking love vashikaran services from a highly
-              skilled specialist. This webpage provides valuable and insightful
-              information on love vashikaran, the nuances of this practice, our
-              renowned Indian love vashikaran astrologer Baba Ji Nikhil Sharma,
-              and effective vashikaran solutions for love-related issues.
+
+        <div
+          className="relative flex flex-col md:flex-row items-center md:items-start gap-8 md:gap-10 p-6 md:p-10 bg-gray-50 bg-cover bg-center"
+          style={{
+            backgroundImage: `url(${image1})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+          }}
+        >
+          {/* Gradient Background Overlay */}
+          <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent"></div>
+
+          {/* Content Section */}
+          <div className="relative z-10 text-white flex-1 space-y-6 md:space-y-8 p-4">
+            <h2 className="text-2xl md:text-3xl font-bold leading-tight">
+              Explore the Power of <span className="text-yellow-400">Love Vashikaran</span> with Expert Guidance
+            </h2>
+
+            <p className="text-base md:text-lg leading-relaxed">
+              <span className="font-semibold">"Love"</span> and{" "}
+              <span className="font-semibold">"Vashikaran"</span> are intricate matters that require utmost care and proper handling. A love vashikaran expert should be a knowledgeable and experienced individual. This page provides valuable insights on love vashikaran, its nuances, and effective solutions offered by our renowned Indian love vashikaran astrologer, <span className="font-semibold">Baba Ji Nikhil Sharma</span>.
             </p>
 
-            <p className="mb-4">
-              In the following section, you will find detailed information about
-              our highly esteemed love vashikaran guru ji, who is renowned
-              worldwide as both an astrologer and a top expert in the field of
-              love vashikaran. Recognized as one of the leading astrologers in
-              India and the most skilled love vashikaran specialist guru ji in
-              Asia, he is highly respected for his expertise. The in this
-              section delve into the importance of love and relationships, as
-              well as how vashikaran services can effectively address issues in
-              these areas.
-            </p>
-            <p className="mb-4">
-              True, profound, and enduring love is a delicate and precious
-              aspect of human experience. As such, any issues related to love
-              require careful, effective, and discreet solutions guru ji's
-              exceptional and reliable vashikaran services promise to foster
-              genuine, perfect, and safe love between two individuals, while
-              also helping clients reunite with lost loves quickly and
-              effortlessly. With his vast knowledge and experience,aran expert's
-              techniques are highly refined, effective, and free from any
-              potential negative consequences.
+            <p className="text-base md:text-lg leading-relaxed">
+              Discover detailed information about our esteemed guru ji, known worldwide for his expertise. He is one of India's leading astrologers and the most skilled love vashikaran specialist in Asia.
             </p>
 
-            <p className="mb-4">
-              Renowned Pandit Ji offers highly effective vashikaran for
-              resolving love problems, which have benefitted many individuals
-              globally. His services are known for their ability to heal and
-              assist people in overcoming difficult love situations, such as
-              rekindling lost love through simple vashikaran. This esteemed
-              vashikaran specialist astrologer has received prestigious awards,
-              solidifying his reputation as one of the most well-known experts
-              in the field services, he swiftly resolves love and inter-caste
-              marriage challenges with great success.
+            <p className="text-base md:text-lg leading-relaxed">
+              True love is a delicate aspect of human experience. Issues in love require careful, effective, and discreet solutions. Guru ji's exceptional vashikaran services promise to foster genuine, safe love and help clients reunite with lost loves swiftly.
+            </p>
+
+            <p className="text-base md:text-lg leading-relaxed">
+              Renowned Pandit Ji offers powerful vashikaran solutions, helping many people globally. Known for his healing abilities, he aids individuals in rekindling love through effective vashikaran.
             </p>
           </div>
-          <div className="animate-slideInRight" >
+
+          {/* Animated YtQuery Component */}
+          <div className="relative z-10 animate-slideInRight flex-shrink-0 w-full md:w-1/3">
             <YtQuery />
           </div>
         </div>
-        <div className="block custom-md:hidden">
-          <div className="animate-slideInRight" >
-            <YtQuery />
-          </div>
 
-          <div>
-            <p className="mb-4 mt-5">
-              Both 'Love' and 'Vashikaran' are serious and intricate matters
-              that require utmost care and proper handling. Therefore, a love
-              vashikaran expert should be a knowledgeable and experienced
-              individual who is mature and sophisticated. In addition to these
-              qualities, there are several other factors to consider when
-              contemplating seeking love vashikaran services from a highly
-              skilled specialist. This webpage provides valuable and insightful
-              information on love vashikaran, the nuances of this practice, our
-              renowned Indian love vashikaran astrologer Baba Ji Nikhil Sharma,
-              and effective vashikaran solutions for love-related issues.
+        <div
+          className="block custom-md:hidden relative px-6 py-8 bg-cover bg-center rounded-lg shadow-2xl text-gray-50"
+          style={{
+            backgroundImage: `url('${image1}')`,
+          }}
+        >
+          {/* Background Overlay for better contrast */}
+          <div className="absolute inset-0 bg-black opacity-60 rounded-lg"></div>
+
+          {/* Content Section */}
+          <div className="relative z-10 space-y-8">
+            {/* Heading */}
+            <h2 className="text-3xl font-extrabold text-center mb-6">
+              Love Vashikaran Specialist <span className="text-red-400">Nikhil Sharma Ji</span>
+            </h2>
+
+            {/* Paragraph 1 */}
+            <p className="text-lg leading-relaxed tracking-wide">
+              Both <span className="font-semibold text-yellow-400">"Love"</span> and
+              <span className="font-semibold text-yellow-400"> "Vashikaran"</span> are intricate matters requiring utmost care. A love vashikaran expert must be highly skilled and knowledgeable. Our renowned Indian love vashikaran astrologer,
+              <span className="font-semibold text-blue-400"> Baba Ji Nikhil Sharma</span>, provides effective solutions for love-related issues.
             </p>
 
-            <p className="mb-4">
-              In the following section, you will find detailed information about
-              our highly esteemed love vashikaran guru ji, who is renowned
-              worldwide as both an astrologer and a top expert in the field of
-              love vashikaran. Recognized as one of the leading astrologers in
-              India and the most skilled love vashikaran specialist guru ji in
-              Asia, he is highly respected for his expertise. The in this
-              section delve into the importance of love and relationships, as
-              well as how vashikaran services can effectively address issues in
-              these areas.
-            </p>
-            <p className="mb-4">
-              True, profound, and enduring love is a delicate and precious
-              aspect of human experience. As such, any issues related to love
-              require careful, effective, and discreet solutions guru ji's
-              exceptional and reliable vashikaran services promise to foster
-              genuine, perfect, and safe love between two individuals, while
-              also helping clients reunite with lost loves quickly and
-              effortlessly. With his vast knowledge and experience,aran expert's
-              techniques are highly refined, effective, and free from any
-              potential negative consequences.
+            {/* Paragraph 2 */}
+            <p className="text-lg leading-relaxed tracking-wide">
+              Discover more about our highly esteemed Guru Ji, globally recognized for his expertise in love vashikaran. Known as one of the leading astrologers in India and Asia, he excels at resolving love and relationship challenges with great success.
             </p>
 
-            <p className="mb-4">
-              Renowned Pandit Ji offers highly effective vashikaran for
-              resolving love problems, which have benefitted many individuals
-              globally. His services are known for their ability to heal and
-              assist people in overcoming difficult love situations, such as
-              rekindling lost love through simple vashikaran. This esteemed
-              vashikaran specialist astrologer has received prestigious awards,
-              solidifying his reputation as one of the most well-known experts
-              in the field services, he swiftly resolves love and inter-caste
-              marriage challenges with great success.
+            {/* Paragraph 3 */}
+            <p className="text-lg leading-relaxed tracking-wide">
+              True, profound love is a delicate part of life. Any issues in love require discreet and effective solutions. Guru Ji’s vashikaran services promise to foster genuine, safe love and help clients reunite with lost love swiftly.
             </p>
-          </div>
-        </div>
 
-        <div className="midContentBox bg-green-700 p-4 my-4 text-white flex text-center items-center justify-center">
-          <p>
-            Swift And Effective Solution Through{" "}
-            <strong>Healing & Meditation</strong> By{" "}
-            <i>Astrologer Nikhil Sharma</i>{" "}
-            <span>
+            {/* Paragraph 4 */}
+            <p className="text-lg leading-relaxed tracking-wide">
+              Renowned Pandit Ji offers powerful vashikaran solutions, helping many globally. His healing abilities assist individuals in rekindling love through simple yet effective vashikaran. Recognized with prestigious awards, he efficiently resolves love and inter-caste marriage challenges.
+            </p>
+
+            {/* Call to Action */}
+            <div className="bg-gradient-to-r from-indigo-600 to-purple-600 p-6 rounded-lg shadow-lg text-center backdrop-blur-sm">
+              <p className="text-lg font-medium mb-3">
+                Reach out for sovereign, swift, and harmless vashikaran services by contacting:
+              </p>
               <a
                 href="tel:+91-95091-68369"
-                className="text-blue-300 hover:underline">
+                className="text-2xl font-bold text-green-300 hover:text-green-400 transition-transform transform hover:scale-110"
+              >
                 +91-95091-68369
               </a>
-            </span>{" "}
-            <a
-              href="mailto:info@astrologerNikhilsharma.com"
-              className="text-blue-300 hover:underline">
-              info@AstrologerNikhilSharma.com
-            </a>
+              <br />
+              <a
+                href="mailto:info@astrologerNikhilSharma.com"
+                className="text-blue-300 hover:text-blue-400 underline mt-4 block transition-transform transform hover:scale-110"
+              >
+                info@AstrologerNikhilSharma.com
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+        {/* Highlighted Mid Content Box */}
+        <div className="midContentBox bg-gradient-to-r from-green-600 to-teal-500 p-6 my-8 rounded-xl text-white text-center shadow-xl hover:shadow-2xl transition-shadow duration-300 ease-in-out">
+          <p className="text-lg md:text-xl font-semibold">
+            Swift and Effective Solution Through <strong>Healing & Meditation</strong> by
+            <i> Astrologer Nikhil Sharma</i>
+            <br />
+            <span className="block mt-4">
+              <a
+                href="tel:+91-95091-68369"
+                className="text-yellow-300 hover:text-yellow-400 underline transition-colors duration-200">
+                +91-95091-68369
+              </a>
+              <span className="mx-2">|</span>
+              <a
+                href="mailto:info@astrologerNikhilsharma.com"
+                className="text-yellow-300 hover:text-yellow-400 underline transition-colors duration-200">
+                info@AstrologerNikhilSharma.com
+              </a>
+            </span>
           </p>
         </div>
 
-        <div className="hidden custom-md:flex">
-          <div className="w-[70vw] items-center justify-center">
-            <h2 className="text-2xl font-bold mb-4">
-              About Love Vashikaran Specialist Pandit Astrologer Nikhil Sharma Ji
-            </h2>
-            <p className="mb-4">
-              Our esteemed guru ji is widely recognized as a leading authority
-              on Love Vashikaran and astrology in India and globally, offering
-              expert solutions to alleviate problems that plague individuals.
-              With over two in these fields, including a decade of international
-              practice, he has established himself as a trusted name in the
-              industry. His expertise spans various aspects of vashikaran,
-              including love, business, and relationships, and has been sought
-              after by clients in major cities across India and the world. He
-              has inherited his profound knowledge and skills from his renowned
-              father, a veteran vashikaran specialist and astrologer. Astrologer
-              Nikhil Sharma has received numerous accolades and awards for his
-              outstanding contributions to the fields of astrology and
-              vashikaran. His organization, headquartered in Chandigarh, Punjab,
-              has a global presence with branches and liaison offices in many
-              major cities worldwide. For those seeking to reunite with their
-              loved ones or resolve love-related issues, he is undoubtedly one
-              of the most sought-after vashikaran experts and astrologers today.{" "}
-            </p>
+        <div
+          className="hidden custom-md:flex bg-cover bg-center relative p-8 rounded-lg shadow-xl space-x-8"
+          style={{
+            backgroundImage: `url('${image1 || "https://source.unsplash.com/1600x900/?astrology,spiritual"}')`,
+          }}
+        >
+          {/* Background Overlay for better contrast */}
+          <div className="absolute inset-0 bg-black opacity-50 rounded-lg"></div>
 
-            <p className="mb-4">
-              Love relationships can encounter various unusual and serious
-              obstacles, some of the most common of which are detailed below.
-              Our skilled and experienced love specialist is capable of
-              resolving all types of love issues through effective and genuine
-              vashikaran techniques, regardless of the complexities involved.
-              His vashikaran mantras are potent yet safe for all parties
-              involved, and his therapies are conducted meticulously to ensure
-              optimal results without any negative repercussions. The
-              affordability and effectiveness of his vashikaran and astrology
-              services have gained widespread recognition. Countless individuals
-              in India and around the world have benefitted from his love
-              vashikaran solutions. In essence, he can expertly address and
-              resolve a wide range of love-related problems through his
-              exceptional vashikaran therapies.
-              <ul className="list-none space-y-2">
+          {/* Main Content Container */}
+          <div className="relative flex w-full z-10 text-white space-x-8">
+            {/* Left Content Section */}
+            <div className="w-2/3">
+              {/* Heading */}
+              <h2 className="text-3xl md:text-4xl font-extrabold mb-6 border-b-4 border-indigo-400 pb-2">
+                About Love Vashikaran Specialist Pandit Astrologer Nikhil Sharma Ji
+              </h2>
+
+              {/* Paragraph 1 */}
+              <p className="leading-relaxed mb-6 text-lg">
+                Our esteemed guru ji is widely recognized as a leading authority on{" "}
+                <span className="text-yellow-300 font-semibold">Love Vashikaran</span> and astrology in India and globally. He offers expert solutions to alleviate problems faced by individuals. With over two decades of experience, including a decade of international practice, he has established himself as a trusted name. His expertise spans various aspects of vashikaran, including love, business, and relationships, making him sought after by clients worldwide.
+              </p>
+
+              {/* Paragraph 2 */}
+              <p className="leading-relaxed mb-6 text-lg">
+                Love relationships can encounter numerous obstacles. Our skilled love specialist resolves all types of love issues through effective and genuine vashikaran techniques. His mantras are potent yet safe, ensuring optimal results without negative repercussions. Countless individuals have benefited from his affordable and effective solutions.
+              </p>
+            </div>
+
+            {/* Right Service Section */}
+            <div className="w-1/3 bg-gradient-to-r from-purple-700 to-indigo-500 p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-bold mb-4 text-white">Common Love Problems Solved:</h3>
+              <ul className="space-y-3 text-white">
                 {[
                   "Stagnancy or Slow Pace of Concerted Love Affairs",
-                  "Objections or Hindrances to Love Relationship from Family or Society",
-                  "Diminishing Allure and Love between Two Lovers",
-                  "Triangular Love Affair",
+                  "Objections from Family or Society",
+                  "Diminishing Allure and Love between Lovers",
+                  "Triangular Love Affairs",
                   "Love Betrayals",
-                  "Rising Discrepancies between the two persons in Love",
-                  "Scarcity of the Desired Understanding and Compatibility between the lovers",
-                  "Serious and Adverse Astrological Facts Discouraging Marriage of Two Lovers",
-                  "Differences in Attitude, Ambition, and Lifestyle of the two persons in love",
-                  "Difficulties of Getting Back the Lost Love",
+                  "Rising Discrepancies between Lovers",
+                  "Scarcity of Understanding and Compatibility",
+                  "Adverse Astrological Factors Discouraging Marriage",
+                  "Differences in Attitude, Ambition, and Lifestyle",
+                  "Difficulties in Getting Back Lost Love",
                 ].map((item, index) => (
-                  <li key={index} className="flex items-center">
-                    <i className="fa fa-arrow-right text-indigo-600 mr-2"></i>
-                    {item}
+                  <li key={index} className="flex items-start">
+                    <i className="fa fa-heart text-yellow-300 mr-3"></i>
+                    <span>{item}</span>
                   </li>
                 ))}
               </ul>
-            </p>
-
-            <span className="block mb-4">
-              To avail sovereign, brisk, and harmless vashikaran services from
-              our gold medalist vashikaran specialist Nikhil Sharma, in
-              connection with the following problems, please call at{" "}
-              <strong>+91-95091-68369</strong>:
-            </span>
-          </div>
-        </div>
-        <div className="block custom-md:hidden">
-          <div className="contentImage ml-4 ">
-            <img src={awardCeremony} alt="" />
-          </div>
-          <div className="items-center justify-center">
-            <h2 className="text-2xl font-bold mb-4">
-              About Love Vashikaran Specialist Pandit Astrologer Nikhil Sharma Ji
-            </h2>
-            <p className="mb-4">
-              Our esteemed guru ji is widely recognized as a leading authority
-              on Love Vashikaran and astrology in India and globally, offering
-              expert solutions to alleviate problems that plague individuals.
-              With over two in these fields, including a decade of international
-              practice, he has established himself as a trusted name in the
-              industry. His expertise spans various aspects of vashikaran,
-              including love, business, and relationships, and has been sought
-              after by clients in major cities across India and the world. He
-              has inherited his profound knowledge and skills from his renowned
-              father, a veteran vashikaran specialist and astrologer. Astrologer
-              Nikhil Sharma has received numerous accolades and awards for his
-              outstanding contributions to the fields of astrology and
-              vashikaran. His organization, headquartered in Chandigarh, Punjab,
-              has a global presence with branches and liaison offices in many
-              major cities worldwide. For those seeking to reunite with their
-              loved ones or resolve love-related issues, he is undoubtedly one
-              of the most sought-after vashikaran experts and astrologers today.{" "}
-            </p>
-
-            <p className="mb-4">
-              Love relationships can encounter various unusual and serious
-              obstacles, some of the most common of which are detailed below.
-              Our skilled and experienced love specialist is capable of
-              resolving all types of love issues through effective and genuine
-              vashikaran techniques, regardless of the complexities involved.
-              His vashikaran mantras are potent yet safe for all parties
-              involved, and his therapies are conducted meticulously to ensure
-              optimal results without any negative repercussions. The
-              affordability and effectiveness of his vashikaran and astrology
-              services have gained widespread recognition. Countless individuals
-              in India and around the world have benefitted from his love
-              vashikaran solutions. In essence, he can expertly address and
-              resolve a wide range of love-related problems through his
-              exceptional vashikaran therapies.
-              <ul className="list-none space-y-2">
-                {[
-                  "Stagnancy or Slow Pace of Concerted Love Affairs",
-                  "Objections or Hindrances to Love Relationship from Family or Society",
-                  "Diminishing Allure and Love between Two Lovers",
-                  "Triangular Love Affair",
-                  "Love Betrayals",
-                  "Rising Discrepancies between the two persons in Love",
-                  "Scarcity of the Desired Understanding and Compatibility between the lovers",
-                  "Serious and Adverse Astrological Facts Discouraging Marriage of Two Lovers",
-                  "Differences in Attitude, Ambition, and Lifestyle of the two persons in love",
-                  "Difficulties of Getting Back the Lost Love",
-                ].map((item, index) => (
-                  <li key={index} className="flex items-center">
-                    <i className="fa fa-arrow-right text-indigo-600 mr-2"></i>
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </p>
-
-            <span className="block mb-4">
-              To avail sovereign, brisk, and harmless vashikaran services from
-              our gold medalist vashikaran specialist Nikhil Sharma, in
-              connection with the following problems, please call at{" "}
-              <strong>+91-95091-68369</strong>:
-            </span>
-          </div>
-          <div className="contentImage ml-4 ">
-          <img src={awardCeremony} alt="" />
+            </div>
           </div>
         </div>
 
-        <h2 className="text-2xl font-bold mb-4">
-          Best Love Astrologer Worldwide and India - Astrologer Nikhil Sharma
-        </h2>
-        <p className="mb-4">
-          Astrology is a vast concept that is based upon the movements of stars
-          and planets that have a huge impact on the lives of people. The
-          movement of stars and planets affects the different life aspects of
-          people like love, relationship, marriage, family, health, career, etc.
-          Different planets are responsible for different life happenings, and
-          for love, the planet Venus is responsible for all the love-related
-          happenings that occur in the lives of people.
-        </p>
-        <p className="mb-4">
-          The <strong>best love astrologer in India</strong> is astrologer
-          Pandit Nikhil Sharma Ji who is not only known in India but also all
-          over the world. He provides the most amazing and beneficial{" "}
-          <strong>love astrology</strong> services to people globally. Love
-          astrology provides solutions for different love issues like:
-        </p>
-        <ul className="list-disc pl-5 mb-6 space-y-2">
-          <li>Lost Love</li>
-          <li>Breakup Problems</li>
-          <li>Misunderstandings</li>
-          <li>Trust Issues</li>
-          <li>Get Ex Back</li>
-          <li>Convincing GF for marriage</li>
-          <li>Convincing BF for marriage</li>
-          <li>Love Marriage Problems</li>
-          <li>Compatibility Issues</li>
-          <li>Other Love-related Problems</li>
-        </ul>
 
+
+        <div
+  className="block custom-md:hidden relative bg-cover bg-center rounded-xl shadow-xl p-6 space-y-8 text-white"
+  style={{
+      backgroundImage: `url(${image1})`
+  }}
+>
+  {/* Background Overlay for Better Contrast */}
+  <div className="absolute inset-0 bg-gradient-to-r from-black via-gray-800 to-black opacity-70 rounded-xl"></div>
+
+  {/* Content Section */}
+  <div className="relative z-10 space-y-8">
+    {/* Top Image */}
+    <div className="flex justify-center">
+      <img
+        src={awardCeremony}
+        alt="Award Ceremony"
+        className="w-full max-w-[200px] rounded-lg shadow-lg"
+      />
+    </div>
+
+    {/* Heading */}
+    <h2 className="text-3xl font-bold text-center">
+      About Love Vashikaran Specialist Pandit Astrologer{" "}
+      <span className="text-yellow-400">Nikhil Sharma Ji</span>
+    </h2>
+
+    {/* Paragraph 1 */}
+    <p className="text-lg leading-relaxed tracking-wide">
+      Our esteemed guru ji is widely recognized as a leading authority on{" "}
+      <span className="font-semibold text-red-400">Love Vashikaran</span> and
+      astrology, both in India and globally. With over two decades of experience, including a decade of international practice, he has established himself as a trusted name. His expertise spans various aspects of vashikaran, helping clients resolve complex love, business, and relationship issues.
+    </p>
+
+    {/* Paragraph 2 */}
+    <p className="text-lg leading-relaxed tracking-wide">
+      Guru Ji has inherited profound knowledge from his renowned father, a veteran vashikaran specialist. Based in Chandigarh, Punjab, his organization has a global presence, offering top-notch services in major cities worldwide. Countless individuals have benefited from his potent yet safe vashikaran solutions, helping them overcome obstacles in love and relationships.
+    </p>
+
+    {/* Detailed List of Services */}
+    <div className="bg-gradient-to-r from-purple-800 to-indigo-600 p-6 rounded-lg shadow-md backdrop-blur-sm">
+      <h3 className="text-xl font-bold mb-4 text-center">Common Love Problems Solved:</h3>
+      <ul className="list-none space-y-4">
+        {[
+          "Stagnancy or Slow Pace of Concerted Love Affairs",
+          "Objections from Family or Society",
+          "Diminishing Allure and Love between Lovers",
+          "Triangular Love Affairs",
+          "Love Betrayals",
+          "Rising Discrepancies between Lovers",
+          "Lack of Understanding and Compatibility",
+          "Astrological Factors Discouraging Marriage",
+          "Differences in Attitude and Lifestyle",
+          "Challenges in Rekindling Lost Love",
+        ].map((item, index) => (
+          <li key={index} className="flex items-center">
+            <i className="fa fa-heart text-red-400 mr-3"></i>
+            <span>{item}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+
+    {/* Call to Action */}
+    <div className="text-center space-y-4">
+      <span className="block text-lg">
+        To avail sovereign, swift, and harmless vashikaran services from our gold medalist specialist Nikhil Sharma, please call:
+      </span>
+      <a
+        href="tel:+91-95091-68369"
+        className="text-2xl font-bold text-green-300 hover:text-green-400 transition-transform transform hover:scale-105"
+      >
+        +91-95091-68369
+      </a>
+      <a
+        href="mailto:info@AstrologerNikhilSharma.com"
+        className="text-blue-300 hover:text-blue-400 underline transition-transform transform hover:scale-105 block"
+      >
+        info@AstrologerNikhilSharma.com
+      </a>
+    </div>
+
+    {/* Bottom Image */}
+    <div className="flex justify-center">
+      <img
+        src={awardCeremony}
+        alt="Award Ceremony"
+        className="w-full max-w-[200px] rounded-lg shadow-lg"
+      />
+    </div>
+  </div>
+</div>
+
+
+        {/* 
         <div className="faq mt-8">
           <h3 className="text-xl font-bold mb-4  ">
             <span className="bg-neutral-600 p-1 text-white">FAQs</span>
@@ -448,7 +419,7 @@ const {slug} = useParams()
               </li>
             </ul>
           </div>
-        </div>
+        </div> */}
 
         <div className="bg-yellow-200 p-4 rounded-md mt-2">
           <p className="text-gray-700">

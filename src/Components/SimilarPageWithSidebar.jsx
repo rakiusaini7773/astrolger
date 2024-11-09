@@ -4,7 +4,7 @@ import { MdOutlineArrowRight } from "react-icons/md";
 import { Link } from "react-router-dom";
 import Footer from "../Components/Footer.jsx";
 import YtQuery from "./YtQuery.jsx";
-
+import image1 from "../../public/images/bg1.webp"
 const SimilarPageWithSidebar = ({ Content }) => {
   return (
     <>
@@ -30,33 +30,77 @@ const SimilarPageWithSidebar = ({ Content }) => {
           </div>
 
           {/* Mid Content Box */}
-          <div className="bg-green-700 p-4 text-white rounded-lg text-center">
-            <p>
-              Swift And Effective Solutions Through <strong>Healing & Meditation</strong> by{" "}
-              <i>Astrologer Nikhil Sharma</i>{" "}
-              <span>
-                <a href="tel:+91-95091-68369" className="text-blue-300 hover:underline">+91-95091-68369</a>
-              </span>{" "}
-              <a href="mailto:info@astrologerNikhilSharma.com" className="text-blue-300 hover:underline">
-                info@AstrologerNikhilSharma.com
-              </a>
-            </p>
+          <div
+            className="bg-cover bg-center p-6 rounded-lg text-white text-center relative shadow-lg"
+            style={{
+              backgroundImage: `url(${image1})`, // Use your image URL here
+            }}
+          >
+            {/* Background Overlay for contrast */}
+            <div className="absolute inset-0 bg-black opacity-50 rounded-lg"></div>
+
+            <div className="relative z-10 space-y-4">
+              <p className="text-lg sm:text-xl md:text-2xl font-semibold leading-relaxed">
+                Swift and Effective Solutions Through <strong>Healing & Meditation</strong> by{" "}
+                <i className="text-yellow-300">Astrologer Nikhil Sharma</i>
+              </p>
+
+              <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
+                {/* Phone Link */}
+                <a
+                  href="tel:+91-95091-68369"
+                  className="text-lg sm:text-xl text-blue-300 hover:text-blue-500 transition-colors duration-300 hover:underline font-semibold"
+                >
+                  +91-95091-68369
+                </a>
+
+                {/* Email Link */}
+                <a
+                  href="mailto:info@astrologerNikhilSharma.com"
+                  className="text-lg sm:text-xl text-blue-300 hover:text-blue-500 transition-colors duration-300 hover:underline font-semibold"
+                >
+                  info@AstrologerNikhilSharma.com
+                </a>
+              </div>
+            </div>
           </div>
 
           {/* Services Section */}
-          <div>
-            <h2 className="text-2xl font-bold">{Content[0].heading2}</h2>
-            <div className="grid gap-2 mt-3 text-gray-800">
-              {Content[0].para2.map((paragraph, index) => (
-                <p key={index}>{paragraph}</p>
-              ))}
-              <ul className="list-disc list-inside text-gray-800 mt-3 space-y-1">
-                {Content[0].ul2.map((item, index) => (
-                  <li key={index}>{item}</li>
+          <div
+            className="bg-cover bg-center p-6 rounded-lg text-white relative shadow-lg"
+            style={{
+              backgroundImage: `url(${image1})`, // Use your image URL here
+            }}
+          >
+            {/* Background Overlay for Contrast */}
+            <div className="absolute inset-0 bg-black opacity-50 rounded-lg"></div>
+
+            <div className="relative z-10 space-y-4">
+              {/* Heading */}
+              <h2 className="text-2xl sm:text-3xl font-extrabold text-center text-yellow-300">
+                {Content[0].heading2}
+              </h2>
+
+              {/* Paragraphs and List */}
+              <div className="grid gap-4 mt-4 text-gray-300">
+                {Content[0].para2.map((paragraph, index) => (
+                  <p key={index} className="text-lg sm:text-xl leading-relaxed">
+                    {paragraph}
+                  </p>
                 ))}
-              </ul>
+
+                {/* Unordered List */}
+                <ul className="list-disc list-inside text-gray-300 mt-4 space-y-2">
+                  {Content[0].ul2.map((item, index) => (
+                    <li key={index} className="text-lg sm:text-xl hover:text-yellow-300 transition-colors duration-300">
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </div>
+
 
           {/* Final Highlight Section */}
           <div className="bg-yellow-200 p-4 rounded shadow-lg mt-6 text-center">
