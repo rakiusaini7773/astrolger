@@ -157,7 +157,10 @@ const LoveVashikaranSpecialist = () => {
           style={{
             backgroundImage: `url('${image1 || "https://source.unsplash.com/1600x900/?astrology,spiritual"}')`,
           }}
-        >
+        > 
+
+
+        {/* ssssssss */}
           {/* Background Overlay for better contrast */}
           <div className="absolute inset-0 bg-black opacity-50 rounded-lg"></div>
 
